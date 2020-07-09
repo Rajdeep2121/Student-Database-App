@@ -37,3 +37,8 @@ flutter install
 <p align="center">
 <img src='Screenshots/4.jpg' height='500'>
 </p>
+
+
+# Demo Recording of App
+
+<a href='https://github.com/Rajdeep2121/Student-Database-App/blob/master/Screenshots/Recording.mp4?raw=true'>Click here.</a>
