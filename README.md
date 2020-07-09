@@ -1,16 +1,30 @@
-# login
+# Student Database App
 
-A new Flutter project.
+App using flutter and firebase for the implementation of student database.
 
-## Getting Started
+# Screens
 
-This project is a starting point for a Flutter application.
+## Login Page
 
-A few resources to get you started if this is your first Flutter project:
+<p align="center">
+<img src='Screenshots/2.jpg' height="500">
+</p>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Register Page
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+<img src='Screenshots/1.jpg' height="500">
+</p>
+
+## Home Page
+
+<p align="center">
+<img src='Screenshots/3.jpg' height="500">
+</p>
+
+## Updating user details in Home Page 
+
+<p align="center">
+<img src='Screenshots/4.jpg' height="500">
+</p>
+
