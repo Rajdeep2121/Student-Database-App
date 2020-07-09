@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "977359417077",
+    "firebase_url": "https://loginapp-4998a.firebaseio.com",
+    "project_id": "loginapp-4998a",
+    "storage_bucket": "loginapp-4998a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977359417077:android:443d91e1acc4e7f8a91fbc",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977359417077-vht4glsg5vf5iu09o68pr4l5g297vqst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Atnw_i7y0wME_UplVSQhznqZdXUo2a8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977359417077-vht4glsg5vf5iu09o68pr4l5g297vqst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
