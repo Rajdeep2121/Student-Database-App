@@ -26,34 +26,29 @@ class Home extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text('Home'),
-          backgroundColor: Color(0xff5e5ce6),
+          backgroundColor: Colors.black,
           actions: <Widget>[
-            FlatButton.icon(
+            FlatButton(
               onPressed: () async {
                 await _auth.signOut();
               },
-              icon: Icon(Icons.person, color: Colors.white),
-              label: Text(
+              // icon: Icon(Icons.person, color: Colors.white),
+              child: Text(
                 'Logout',
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-            FlatButton.icon(
-              onPressed: () {
-                _showSettings();
-              },
-              icon: Icon(
-                Icons.settings,
-                color: Colors.white,
-              ),
-              label: Text(
-                'Settings',
                 style: TextStyle(color: Colors.white),
               ),
             ),
           ],
         ),
         body: ItemList(),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () => _showSettings(),
+          child: Icon(
+            Icons.settings,
+            size: 30,
+          ),
+          backgroundColor: Colors.black,
+        ),
       ),
     );
   }

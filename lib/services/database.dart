@@ -8,10 +8,11 @@ class DatabaseService {
       Firestore.instance.collection('items');
   DatabaseService({this.uid});
 
-  Future updateUserData(String item, String count) async {
+  Future updateUserData(String item, String count, String email) async {
     return await newCollection.document(uid).setData({
       'item': item,
       'count': count,
+      'email': email,
     });
   }
 
@@ -20,6 +21,7 @@ class DatabaseService {
       return Item(
         item: doc.data['item'] ?? '',
         count: doc.data['count'] ?? '0',
+        email: doc.data['email'] ?? '',
       );
     }).toList();
   }
@@ -29,6 +31,7 @@ class DatabaseService {
       uid: snapshot.data['uid'],
       item: snapshot.data['item'],
       count: snapshot.data['count'],
+      email: snapshot.data['email'],
     );
   }
 

@@ -13,6 +13,7 @@ class _SettingsFormState extends State<SettingsForm> {
 
   String _currentItem;
   String _currentCount;
+  String _currentEmail;
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +49,15 @@ class _SettingsFormState extends State<SettingsForm> {
                     onChanged: (val) => setState(() => _currentCount = val),
                   ),
                   SizedBox(height: 20),
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: 'Email',
+                    ),
+                    // validator: (val) => val.isEmpty ? 'Enter email' : null,
+                    validator: (val) => null,
+                    onChanged: (val) => setState(() => _currentEmail = val),
+                  ),
+                  SizedBox(height: 20),
                   RaisedButton(
                     color: Color(0xff00695c),
                     child: Text(
@@ -57,8 +67,10 @@ class _SettingsFormState extends State<SettingsForm> {
                     onPressed: () async {
                       if (_formKey.currentState.validate()) {
                         await DatabaseService(uid: user.uid).updateUserData(
-                            _currentItem ?? userData.item,
-                            _currentCount ?? userData.count);
+                          _currentItem ?? userData.item,
+                          _currentCount ?? userData.count,
+                          _currentEmail ?? userData.email,
+                        );
                         Navigator.pop(context);
                       }
                     },
