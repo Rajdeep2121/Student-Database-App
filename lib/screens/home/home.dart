@@ -12,6 +12,13 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     _showSettings() {
       showModalBottomSheet(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(30),
+              topRight: Radius.circular(30),
+            ),
+          ),
+          backgroundColor: Colors.green[200],
           context: context,
           builder: (context) {
             return Container(

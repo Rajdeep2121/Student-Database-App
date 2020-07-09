@@ -35,25 +35,22 @@ class _SettingsFormState extends State<SettingsForm> {
                   SizedBox(height: 20),
                   TextFormField(
                     decoration: InputDecoration(
-                      labelText: 'Name',
+                      labelText: 'New Name',
                     ),
-                    validator: (val) => val.isEmpty ? 'Enter name' : null,
                     onChanged: (val) => setState(() => _currentItem = val),
                   ),
                   SizedBox(height: 20),
                   TextFormField(
                     decoration: InputDecoration(
-                      labelText: 'Age',
+                      labelText: 'New Age',
                     ),
-                    validator: (val) => val.isEmpty ? 'Enter age' : null,
                     onChanged: (val) => setState(() => _currentCount = val),
                   ),
                   SizedBox(height: 20),
                   TextFormField(
                     decoration: InputDecoration(
-                      labelText: 'Email',
+                      labelText: 'New Email',
                     ),
-                    // validator: (val) => val.isEmpty ? 'Enter email' : null,
                     validator: (val) => null,
                     onChanged: (val) => setState(() => _currentEmail = val),
                   ),
